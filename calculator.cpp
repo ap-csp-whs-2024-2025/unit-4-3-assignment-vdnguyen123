@@ -62,7 +62,14 @@ int main()
             {
               std::cout << "Enter two numbers\n";
               std::cin >> num1 >> num2;
-              std::cout << "Their quotient is " << (num1 / num2) << std::endl;
+              if (num2 == 0)
+              {
+                std::cout << "Divide by 0 error, try again" << std::endl;
+              }
+              else
+              {
+                std::cout << "Their quotient is " << (num1 / num2) << std::endl;
+              }
             }
             else
             {
@@ -70,7 +77,14 @@ int main()
               {
                 std::cout << "Enter a number\n";
                 std::cin >> num1;
-                std::cout << "The square root of " << num1 << " is " << (sqrt(num1)) << std::endl;
+                if (num1 > 0)
+                {
+                  std::cout << "The square root of " << num1 << " is " << (sqrt(num1)) << std::endl;
+                }
+                else
+                {
+                  std::cout << "Error, try again" << std::endl;
+                }
               }
               else
               {
