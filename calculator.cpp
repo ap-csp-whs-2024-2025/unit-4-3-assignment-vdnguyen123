@@ -43,7 +43,45 @@ int main()
       else
       {
         if (user_input == 2)
-        std::cout << "Enter two numbers\n";
+        {
+          std::cout << "Enter two numbers\n";
+          std::cin >> num1 >> num2;
+          std::cout << "Their difference is " << (num1 - num2) << std::endl;
+        }
+        else
+        {
+          if (user_input == 3)
+          {
+            std::cout << "Enter two numbers\n";
+            std::cin >> num1 >> num2;
+            std::cout << "Their product is " << (num1 * num2) << std::endl;
+          }
+          else
+          {
+            if (user_input == 4)
+            {
+              std::cout << "Enter two numbers\n";
+              std::cin >> num1 >> num2;
+              std::cout << "Their quotient is " << (num1 / num2) << std::endl;
+            }
+            else
+            {
+              if (user_input == 5)
+              {
+                std::cout << "Enter a number\n";
+                std::cin >> num1;
+                std::cout << "The square root of " << num1 << " is " << (sqrt(num1)) << std::endl;
+              }
+              else
+              {
+                if (user_input != 99)
+                {
+                  std::cout << "Invalid option. Please choose again.\n";
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
